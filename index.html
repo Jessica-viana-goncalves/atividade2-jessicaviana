@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="back-button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></button>
+      <h4>Let's Sign Up</h4>
+    </div>
+    <form action="cadastro.php" class="form">
+      <h1>Create <br> Account!</h1>
+
+      <label for="nome" class="sr-only">Name</label>
+      <input type="text" name="nome" id="nome" placeholder="Name" class="input" required="name">
+      
+      <label for="email" class="sr-only">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" class="input" required="email">
+    
+      <div class="password-container">
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" class="input">
+        
+        <button type="button" class="toggle-password">&#128065;</button>
+      </div>
+      
+      <button type="submit" class="signup-button">Sign Up</button>
+      <p class="signin-text">
+        Already have an account? <a href="#" class="signin-link">Sign In</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>

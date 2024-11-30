@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 50px;
+}
+
+.back-button { 
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  font-size: 1.0rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s, background-color 0.3s;
+  margin-right: 50px;
+  margin-left: 5px;
+}
+
+.back-button:hover {
+  color: #007bff; 
+  background-color: #cbd1e18e;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 45px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.input {
+  font-family: 'Poppins', Arial, sans-serif; 
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #333; 
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+  line-height: 0;
+}
+
+.signup-button {
+  background-color: #0a97cfc8;
+  font-family: 'Poppins', Arial, sans-serif; 
+  color: #fff;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.signup-button:hover {
+  background-color: #1e12f4d4;
+}
+
+.signin-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  margin-bottom: 100px;
+}
+
+.signin-link {
+  color: #00b3ffe9;
+  text-decoration: none;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
